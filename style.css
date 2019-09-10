@@ -1,0 +1,51 @@
+body {
+  background-color: beige
+}
+
+.output {
+  display: none;
+  width: 75%
+}
+
+.image-canvas {
+  width: 75%;
+  border: 2px solid black
+}
+
+
+:root {
+  --base:white;
+  --spacing: 10px;
+  --blur: 0px;
+  --brightness: 100%;
+  --contrast: 100%;
+  --grayscale: 0%;
+  --saturate: 100%;
+  --sepia: 0%;
+  --huerotate: 0%;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur))  
+    brightness(var(--brightness))
+    contrast(var(--contrast))
+    grayscale(var(--grayscale))
+    saturate(var(--saturate))
+    sepia(var(--sepia)) 
+    hue-rotate(var(--huerotate))
+}
+
+.controls {
+  display: none;
+  width: 30%;
+  border: solid 2px;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+}
